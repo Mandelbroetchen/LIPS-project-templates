@@ -62,19 +62,25 @@
     </p>
     <pre><code>[folder src="./code-raw/contents"]
     [file src="./code-raw/contents/file1.extension1"]
-GENERATE_ACTUAL_FILE_CONTENTED_HERE
+GENERATE_ACTUAL_FILE_CONTENTS_HERE
     [/file]
     [file src="./code-raw/contents/file2.extension2"]
-GENERATE_ACTUAL_FILE_CONTENTED_HERE
+GENERATE_ACTUAL_FILE_CONTENTS_HERE
     [/file]
     [file src="./code-raw/contents/folder1/file3.extension3"]
-GENERATE_ACTUAL_FILE_CONTENTED_HERE
+GENERATE_ACTUAL_FILE_CONTENTS_HERE
     [/file]
     [file src="./code-raw/contents/folder1/file4.extension4"]
-GENERATE_ACTUAL_FILE_CONTENTED_HERE
+GENERATE_ACTUAL_FILE_CONTENTS_HERE
     [/file]
     ...
 [/folder]</code></pre>
+
+    <h2>DO-NOTs!!!!!</h2>
+    <ul>
+        <li>Do not write <code>```FILE_TYPE</code> at the beginning of any file content.</li>
+        <li>Do not write <code>```</code> at the end of any file content.</li>
+    </ul>
 </body>
 </html>
 
