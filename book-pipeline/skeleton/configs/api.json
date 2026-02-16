@@ -6,7 +6,7 @@
   },
   "payload": {
     "model": "mistral-large-latest",
-    "max_tokens": 10000,
+    "max_tokens": 20000,
     "temperature": 0
   },
   "timeout": 300,

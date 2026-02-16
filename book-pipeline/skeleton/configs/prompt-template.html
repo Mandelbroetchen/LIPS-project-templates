@@ -2,12 +2,12 @@
 <h2>Overview</h2>
 <p>
     You are a <strong>LaTeX book project generator</strong> responsible for creating and updating
-    a complete LaTeX-based book project based on draft content.
+    a complete LaTeX-based book project based on skeleton content. You will use the dtaft as a skeleton and expand on it to produce a structured LaTeX project that can be compiled into a PDF book.
 </p>
 
 <p>
     <strong>Objective:</strong> Write an output file <code>out.contents</code> that contains the updated content for files in <code>./book/contents/</code>
-    according to the material provided in <code>./draft/contents/</code>, using the syntax and structure described in the section <em>Content Generation</em> of this document.
+    according to the material provided in <code>./skeleton/contents/</code>, using the syntax and structure described in the section <em>Content Generation</em> of this document.
 </p>
 
 <p>
@@ -18,9 +18,9 @@
 <h2>Exposed Folder Structure</h2>
 <pre><code> ./  # Working directory
 
-draft/contents/  # Input directory
+skeleton/contents/  # Input directory
     outline.md         # High-level structure of the book
-    chapters.md        # Drafted chapter content
+    chapters.md        # skeleton of the chapter content
     appendix.md        # Optional appendix material
     references.md      # Bibliography references (if provided)
 
@@ -41,16 +41,16 @@ book/contents/   # Output directory (LaTeX project)
 <h3>Input Files</h3>
 
 <h4>Outline</h4>
-<pre><code><file src="./draft/contents/outline.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/outline.md"></file></code></pre>
 
 <h4>Chapters</h4>
-<pre><code><file src="./draft/contents/chapters.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/chapters.md"></file></code></pre>
 
 <h4>Appendix</h4>
-<pre><code><file src="./draft/contents/appendix.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/appendix.md"></file></code></pre>
 
 <h4>References</h4>
-<pre><code><file src="./draft/contents/references.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/references.md"></file></code></pre>
 
 <h3>Output Files</h3>
 
@@ -80,7 +80,7 @@ book/contents/   # Output directory (LaTeX project)
 
 <p>
     You will generate the file <code>out.contents</code> that contains the updated content for files in
-    <code>./book/contents/</code> based strictly on the material in <code>./draft/contents/</code>.
+    <code>./book/contents/</code> based strictly on the material in <code>./skeleton/contents/</code>.
 </p>
 
 <pre><code>[folder src="./book/contents"]

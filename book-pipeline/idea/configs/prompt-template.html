@@ -1,17 +1,17 @@
-<html></html><body> <h1>Book Draft Generator Prompt</h1>
+<html></html><body> <h1>Book Skeleton Generator Prompt</h1>
     <h2>Overview</h2>
 <p>
-    You are a <strong>book draft generator</strong> responsible for transforming high-level ideas
-    into a structured and coherent book draft.
+    You are a <strong>book skeleton generator</strong> responsible for transforming high-level ideas
+    into a structured and coherent book skeleton.
 </p>
 
 <p>
-    <strong>Objective:</strong> Write an output file <code>out.contents</code> that contains the updated content for files in <code>./draft/contents/</code>
+    <strong>Objective:</strong> Write an output file <code>out.contents</code> that contains the updated content for files in <code>./skeleton/contents/</code>
     based on the material provided in <code>./idea/contents/</code>, using the syntax and structure described in the section <em>Content Generation</em>.
 </p>
 
 <p>
-    The goal is to expand abstract ideas into a well-organized manuscript draft suitable
+    The goal is to expand abstract ideas into a well-organized manuscript skeleton suitable
     for later transformation into a full LaTeX book project.
 </p>
 
@@ -21,10 +21,10 @@
 idea/contents/   # Input directory
     idea.md           # Core idea and vision of the book
 
-draft/contents/  # Output directory
+skeleton/contents/  # Output directory
     outline.md            # Structured table of contents
-    chapters.md           # Full prose draft of chapters
-    appendix.md           # Appendix draft (if applicable)
+    chapters.md           # Full prose skeleton of chapters
+    appendix.md           # Appendix skeleton (if applicable)
     references.md         # Reference list in plain text format
 </code></pre>
 
@@ -38,44 +38,44 @@ draft/contents/  # Output directory
 <h3>Output Files</h3>
 
 <h4>Outline</h4>
-<pre><code><file src="./draft/contents/outline.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/outline.md"></file></code></pre>
 
 <h4>Chapters</h4>
-<pre><code><file src="./draft/contents/chapters.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/chapters.md"></file></code></pre>
 
 <h4>Appendix</h4>
-<pre><code><file src="./draft/contents/appendix.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/appendix.md"></file></code></pre>
 
 <h4>References</h4>
-<pre><code><file src="./draft/contents/references.md"></file></code></pre>
+<pre><code><file src="./skeleton/contents/references.md"></file></code></pre>
 
 <h2>Content Generation</h2>
 
 <p>
     You will generate the file <code>out.contents</code> that contains the updated content for files in
-    <code>./draft/contents/</code> based strictly on the material in <code>./idea/contents/</code>.
+    <code>./skeleton/contents/</code> based strictly on the material in <code>./idea/contents/</code>.
 </p>
 
-<pre><code>[folder src="./draft/contents"]
-[file src="./draft/contents/outline.md"]
+<pre><code>[folder src="./skeleton/contents"]
+[file src="./skeleton/contents/outline.md"]
 GENERATE_ACTUAL_FILE_CONTENTS_HERE
 [/file]
 
-[file src="./draft/contents/chapters.md"]
+[file src="./skeleton/contents/chapters.md"]
 GENERATE_ACTUAL_FILE_CONTENTS_HERE
 [/file]
 
-[file src="./draft/contents/appendix.md"]
+[file src="./skeleton/contents/appendix.md"]
 GENERATE_ACTUAL_FILE_CONTENTS_HERE
 [/file]
 
-[file src="./draft/contents/references.md"]
+[file src="./skeleton/contents/references.md"]
 GENERATE_ACTUAL_FILE_CONTENTS_HERE
 [/file]
 
 [/folder]
 </code></pre>
-<h2>Draft Requirements</h2>
+<h2>skeleton Requirements</h2>
 <ul>
     <li><strong>Outline:</strong> Must contain a structured table of contents with parts, chapters, and sections where appropriate.</li>
     <li><strong>Chapters:</strong> Must expand all major ideas into coherent prose, with logical transitions and consistent tone.</li>
